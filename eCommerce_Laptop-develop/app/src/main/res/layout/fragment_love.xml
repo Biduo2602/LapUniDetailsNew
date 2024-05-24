@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LoveFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Whist List"
+            android:textSize="32sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--        Field Name-->
+            <TableRow
+                android:minHeight="30dp"
+                android:layout_width="match_parent"
+                android:background="#CCC"
+                android:gravity="center"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:text="Product"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.8"
+                    ></TextView>
+                <TextView
+                    android:text="Price"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.2"
+                    ></TextView>
+            </TableRow>
+            <TableRow
+                android:minHeight="30dp"
+                android:layout_width="match_parent"
+                android:background="#CCC"
+                android:gravity="center"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:text="Sanpham1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.8"
+                    ></TextView>
+                <TextView
+                    android:text="Gia"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.2"
+                    ></TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</FrameLayout>

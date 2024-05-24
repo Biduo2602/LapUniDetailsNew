@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context=".activity.DetailActivity"
+    android:scrollbars="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/detailImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.075" />
+
+                <ImageButton
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@id/detailImg"
+                    android:layout_alignEnd="@id/detailImg"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/white"
+                    android:src="@drawable/heart_outline" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detailName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detailRam"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EFECEC"
+                    android:padding="7dp"
+                    android:text="RAM 8 GB"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailSsd"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="SSD 510 GB"
+                    android:layout_marginLeft="100dp"
+                    android:textColor="@color/black"
+                    android:background="#EFECEC"
+                    android:padding="7dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/detailOldprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COST"
+                android:textColor="#5AB2FF"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/detailDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISCOUNT"
+                android:textColor="#E72929"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailCpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CPU"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailSoNhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SoNhan"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailSoLuong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SoLuong"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailTocDoCPU"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TocDoCPU"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailTocDoToiDa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TocDoToiDa"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailBoNhoDem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BoNhoDem"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailLoaiRAM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LoaiRAM"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailTocDoBusRAM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TocDoBusRAM"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailHoTroRAMToiDa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TocDoCPUHoTroRAMToiDa"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailOCung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="O Cung"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailManHinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ManHinh"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailDoPhanGiai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DoPhanGiai"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailTanSoQuet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TanSoQuet"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailCNManHinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CNManHinh"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailCartManHinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CartManHinh"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailCongGiaoTiep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CongGiaoTiep"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailKetNoiKoDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KetNoiKoDay"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pin"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/detailCongSuatSac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CongSuatSac"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/btn_addCart"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Add To Cart"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.938"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailImg"
+                app:layout_constraintVertical_bias="0.052" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

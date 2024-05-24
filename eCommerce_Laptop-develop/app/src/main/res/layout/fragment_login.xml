@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".fragment.LoginFragment">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:gravity="start
+"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="80dp"
+            android:text="Login to your account"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="293dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:text="@string/your_personal_data_will_be_used_to_support_your_experience_throughout_this_app_to_manage_access_to_your_account" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Email"
+            android:textSize="16sp" />
+
+        <EditText
+            android:fontFamily="sans-serif"
+            android:id="@+id/emailLogin"
+            android:layout_width="311dp"
+            android:layout_height="50dp"
+            android:alpha="0.6"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:fontFamily="sans-serif"
+            android:id="@+id/passwordLogin"
+            android:layout_width="311dp"
+            android:layout_height="50dp"
+            android:alpha="0.6"
+            android:drawableLeft="@drawable/pass1"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/black"
+            android:textSize="18sp" />
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:alpha="0.6"
+            android:text="Remember me"
+            android:id="@+id/rememberAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:background="@drawable/round_rect_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Don't have any account?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/redirectRegister"
+                android:textColor="#BDCBFF"
+                android:layout_marginLeft="8dp"
+                android:text="Register now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
